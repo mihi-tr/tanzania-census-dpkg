@@ -1,0 +1,31 @@
+{
+  "name":"tanzania-census-2012",
+  "title":"Tanzania Census 2012 - Population per Council",
+  "description":"A scraped version of the Tanzania, population per Council data from the national bureau of statistics",
+  "resources": [{
+    "path":"data/tanzania-census.csv",
+    "schema": {
+      "fields":[
+        {"id":"region",
+          "type":"string"},
+        {"id":"number",
+          "type":"number"},
+        {"id":"council",
+          "type":"string"},
+        {"id":"total",
+          "type":"number"},
+        {"id":"male",
+          "type":"number"},
+        {"id":"female",
+          "type":"number"},
+        {"id":"household size",
+          "type":"number"}
+
+        ]
+     }
+    }],
+  "sources": [{
+    "name":"National Bureau of Statistics",
+    "web":"http://www.nbs.go.tz/sensa/index1.html"
+    }]
+}
